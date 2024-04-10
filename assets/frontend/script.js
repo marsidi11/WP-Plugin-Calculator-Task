@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var calculateButton = document.getElementById('calculate');
     
     if (calculateButton) {
+
         calculateButton.addEventListener('click', function() {
             var x = document.getElementById('x').value;
             var y = document.getElementById('y').value;
@@ -27,9 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }).fail(function (xhr, status, error) {
                     console.log('Error: ' + error + ' with status: ' + status + ' with xhr: ' + xhr.responseText);
                 });
-
             }
-
         });
     }
 });

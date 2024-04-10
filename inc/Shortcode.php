@@ -1,6 +1,7 @@
 <?php
 
-function calculator() {
+function calculator() 
+{
     ob_start();
 
     include plugin_dir_path(__FILE__) . '../templates/ClientSite.php';

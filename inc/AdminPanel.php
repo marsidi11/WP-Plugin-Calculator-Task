@@ -20,9 +20,11 @@ function calculator_page()
 {
     $template_path = plugin_dir_path(__FILE__) . '../templates/AdminSite.php';
     
-    if (file_exists($template_path)) {
+    if (file_exists($template_path)) 
+    {
         include $template_path;
-    } else {
+    } else 
+    {
         echo 'File not found';
     }
 }
